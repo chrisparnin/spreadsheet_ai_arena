@@ -1,0 +1,17 @@
+[project]
+name = "spreadsheet_arena"
+version = "0.1.0"
+description = "An extensivable benchmark framemwork for evaluating spreadsheet tasks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.62.0",
+    "fastmcp>=2.11.2",
+    "mcp[cli]>=1.12.4",
+]
+
+[project.scripts]
+arena = "spreadsheet_arena.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

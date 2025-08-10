@@ -1,0 +1,6 @@
+.python-version
+**/__pycache__
+**/.venv
+*.egg-info
+**/datasets/benchmark-tasks/*
+**/output_dir/

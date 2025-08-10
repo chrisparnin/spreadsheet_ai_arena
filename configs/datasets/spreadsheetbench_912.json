@@ -1,0 +1,15 @@
+{
+  "id": "benchmark-tasks/spreadsheetbench-912",
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/RUCKBReasoning/SpreadsheetBench.git",
+    "ref": "main",
+    "subdir": "data"
+  },
+  "transforms": [
+    { "type": "untar", "patterns": ["all_data_912.tar.gz"], "delete_archives": true },
+    { "type": "strip_prefix", "prefix": "all_data_912" }
+  ],
+  "manifest": "dataset.json"
+}
